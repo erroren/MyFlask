@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>注册</title>
+		<link rel="stylesheet" type="text/css" href="../js/bootstrap-3.3.7-dist/css/bootstrap.css"/>
+		<script src="../js/jquery-2.1.4.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/bootstrap-3.3.7-dist/js/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			body{
+				background: url(../static/img/bg.jpg) center center;
+				background-size: 100%;
+				background-repeat: no-repeat;
+			}
+			#login{
+				width: 500px;
+				height: 500px;
+				background-color: #007AFF;
+				margin: 100px auto;
+				display: block;
+			}
+			#title1{
+				width: 500px;
+				height: 100px;
+			}
+			#title1>h1{
+				height: 100px;
+				line-height: 100px;
+				width: 500px;
+				text-align: center;
+				color: #BCE8F1;
+			}
+			#login1{
+				width: 400px;
+				height: 300px;
+				/* margin-top: 100px; */
+				margin-left: 50px;
+				background-color:#31B0D5;
+			}
+			a{
+				margin-left: 10px;
+				text-decoration: none;
+				color: #FFFFFF;
+			}
+			.form-group{
+				/* margin-top: 50px; */
+				height: 50px;
+				padding-top: 50px;
+				margin-left: 50px;
+			}
+			.form-group label{
+				margin-right: 20px;
+				font-size: large;
+				margin-top: 50px;
+			}
+			.form-group input{
+				height: 30px;
+				width: 250px;
+			}
+			.btn{
+				width: 150px;
+				height: 50px;
+				margin-left: 130px;
+			}
+			.bt{
+				width: 100%;
+				height: 100px;
+				/* border: 1px solid #008000; */
+				line-height: 100px;
+				margin-top:50px;
+				color: aqua;
+			}
+			.bt1{
+				
+				text-align: center;
+				font-size: 100px;
+				
+			}
+		</style>
+	</head>
+	<body>
+		<!-- <h1>注册中心</h1>
+		<form action="/registerUser" method="post">
+			用户名:<input type="text" name="username" value="" /><br>
+			密码: <input type="password" name="password" /><br>
+			<input type="submit" name=""  value="注册" />
+			<a href="/"><input type="button" value="返回首页" /></a>
+		</form> -->
+		<div class="bt">
+				  <h1 class="bt1">文章管理系统</h1>
+		</div>
+		<div id="login">
+			<div id="title1">
+				<h1>注册中心</h1>
+			</div>
+			<div id="login1">
+				<form class="form-inline" action="/registerUser" method="post">
+				  <div class="form-group">
+					<label for="exampleInputName2">姓名</label>
+					<input type="text" class="form-control" name="username" placeholder="用户名">
+				  </div>
+				  <div class="form-group">
+					<label for="exampleInputEmail2">密码</label>
+					<input type="password" class="form-control" name="password" placeholder="请输入密码">
+				  </div>
+				  <br><button type="submit" class="btn btn-default">注册</button>
+				  <a href="/">返回首页</a>
+				</form>
+			</div>
+		</div>
+	</body>
+</html>
